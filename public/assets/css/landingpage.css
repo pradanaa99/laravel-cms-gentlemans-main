@@ -1,0 +1,355 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* BATAS CSS RESET ERIC MEYER */
+
+body {
+    margin: auto;
+    background-image: linear-gradient(to left, rgb(197, 197, 197), rgb(255, 255, 255));
+}
+.topbar {
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position:fixed;
+    z-index: 9999;
+}
+.topbar img {
+    width: fit-content;
+    height: 40px;
+    margin: 5px 0 5px 120px;
+    position: absolute;
+    display: inline-block;
+}
+.menutopbar li {
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:normal;
+    font-size: small;
+    color: white;
+    display: inline-block;
+}
+.menutopbar li:hover {
+    font-weight: bold;
+    color: lightgreen;
+}
+.dropdown-catalogue {
+    display: block;
+    padding: 10px;
+}
+  .search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    margin-left: 86%;
+    margin-top: -50px;
+  }
+  .input-search{
+    height: 10px;
+    width: 0px;
+    border-style: double;
+    padding: 10px;
+    margin: 5px 0 5px 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+    outline: none;
+    border-radius: 50px;
+    transition: all .5s ease-in-out;
+    background-color: #000000;
+    padding-right: 20px;
+    color:rgb(201, 201, 201);
+  }
+  .input-search:hover {
+    color: #ffffff;
+  }
+  .input-search::placeholder{
+    color:rgb(159, 159, 159);
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 80;
+  }
+  .btn-search{
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+    border-style: none;
+    font-size: 17px;
+    font-weight: normal;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#c0c0c0 ;
+    background-color: transparent;
+  }
+  .btn-search:focus ~ .input-search{
+    width: 170px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1) (0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 170px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  @media (max-width: 40%) {
+    .hidden-component {
+      display: none;
+    }
+}
+.fa-shopping-cart {
+    font-size: 24px; /* Ukuran ikon */
+    color: #ffffff; /* Warna ikon */
+    position: absolute;
+    top: 12px;
+    left: 83%;
+    overflow: hidden;
+  }
+.fa-shopping-cart:hover {
+    color: lightgreen;
+}
+  
+.heroimg1 {
+    width: auto;
+    margin: 0px 0 50px 0;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: rgb(22, 22, 22);
+}
+.heroimg1 p {
+    width: 100%;
+    height: 100%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    transition: .5s;
+    color: rgb(230, 230, 230);
+    transition: 500ms;
+}
+.heroimg1 span {
+    letter-spacing: 0px;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    border: #000000;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+    top: 350px;
+}
+.heroimg1:hover {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0); /* Warna latar belakang overlay saat hover */
+    transition: .3s;
+}
+.heroimg1:hover img {
+    opacity: 0.7; /* Opacity gambar saat hover */
+    transition: opacity 0.3s ease; /* Transisi opacity saat hover */
+}
+.heading-title h1 {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(52, 52, 52);
+	font-size: 100px;
+	font-weight: bold;
+	margin: 0;
+	padding: 20px;
+    text-align: left;
+}   
+.content {
+    margin: 15px 150px 15px 150px;
+}
+.content p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+.mini-gallery, .mini-gallery2 {
+    display: flex; /* Menggunakan flexbox untuk tata letak horizontal */
+    justify-content: center;
+}
+.poster1, .poster2, .poster3 {
+    width: 350px;
+    height: 375px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    padding-bottom: 30px;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgb(124, 124, 124);
+    overflow: hidden;
+    transition: .3s;
+    display: inline-block;
+    margin-right: auto;
+}
+.poster4, .poster5, .poster6 {
+    width: 350px;
+    height: 375px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    padding-bottom: 30px;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgb(124, 124, 124);
+    overflow: hidden;
+    transition: .3s;
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: auto;
+}
+.poster1:hover, .poster2:hover, .poster3:hover, .poster4:hover, .poster5:hover, .poster6:hover {
+    width: 375px;
+    height: 400px;
+    box-shadow: 5px 5px 10px rgb(182, 182, 182);
+    position: relative;
+}
+.newcatalogue {
+    display: flex; /* Menggunakan flexbox untuk tata letak horizontal */
+}
+.cat1, .cat2, .cat3 {
+    width: 350px;
+    height: 375px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    padding-bottom: 30px;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 10px 10px 10px rgb(124, 124, 124);
+    overflow: hidden;
+    transition: .3s;
+    display: inline-block;
+    margin-right: auto;
+}
+.cat1price, .cat2price, .cat3price, .cat4price, .cat4price, .cat5price, .cat6price {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    padding-top: 5px;
+}
+.cat1:hover, .cat2:hover, .cat3:hover, .cat4:hover, .cat5:hover, .cat6:hover {
+    width: 375px;
+    height: 400px;
+    box-shadow: 5px 5px 10px rgb(182, 182, 182);
+}
+.newcatalogue2 {
+    margin-top: 50px;
+    display: flex;
+}
+.cat4, .cat5, .cat6 {
+    width: 350px;
+    height: 375px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    padding-bottom: 30px;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 10px 10px 10px rgb(124, 124, 124);
+    overflow: hidden;
+    transition: .3s;
+    display: inline-block;
+    margin-right: auto;
+}
+.bestsellerimg {
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    margin: 0px 0 50px 0;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.bestsellerimg p {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+.ladies-caption {
+    letter-spacing: 10px;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150px;
+    border: #000000;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+    top: 300px;
+}
+.bestsellerimg:hover {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0); /* Warna latar belakang overlay saat hover */
+    transition: .3s;
+}
+.bestsellerimg:hover img {
+    opacity: 0.7; /* Opacity gambar saat hover */
+    transition: opacity 0.3s ease; /* Transisi opacity saat hover */
+}
+.content2 {
+    margin: 15px 150px 15px 150px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content2 h2 {
+    font-size: 75px;
+    font-weight: bold;
+    color: rgb(52, 52, 52);
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.content2 p {
+    font-size: 25px;
+    color: rgb(93, 93, 93);
+    margin-bottom: 50px;
+}
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
